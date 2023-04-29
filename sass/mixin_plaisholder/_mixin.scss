@@ -3,6 +3,11 @@
 //     @content;
 //   }
 // }
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
 
 @mixin desktop {
   @media screen and (min-width: 1200px) {
