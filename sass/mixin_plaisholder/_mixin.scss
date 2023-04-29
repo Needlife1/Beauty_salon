@@ -1,0 +1,11 @@
+// @mixin mobail {
+//   @media screen and (min-width: 320px) {
+//     @content;
+//   }
+// }
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
