@@ -77,8 +77,7 @@
 }
 
 .services-lust-link {
-  color: var(--text-color);
-  @include font(300, 13px, 1.15);
+  @extend .services-sub-link;
   opacity: 0.4;
 }
 

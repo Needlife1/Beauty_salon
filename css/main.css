@@ -531,7 +531,7 @@ button {
   padding: 11px 0px;
 }
 
-.services-sub-link {
+.services-sub-link, .services-lust-link {
   color: var(--text-color);
   font-weight: 300;
   font-size: 13px;
@@ -539,10 +539,6 @@ button {
 }
 
 .services-lust-link {
-  color: var(--text-color);
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 1.15;
   opacity: 0.4;
 }
 
