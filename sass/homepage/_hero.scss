@@ -1,0 +1,89 @@
+.hero {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 86px;
+  gap: 21px;
+  justify-content: space-evenly;
+}
+
+.hero-cover-top {
+  min-width: 135px;
+}
+
+.hero-titel,
+.hero-titel-el {
+  @include font(800, 18px, 1.16);
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-bottom: 31px;
+  @include desktop {
+    font-size: 60px;
+    line-height: 1.16;
+    width: 417px;
+    margin-bottom: 54px;
+  }
+}
+
+.hero-text::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 40px;
+  background-color: #ff312e;
+  border-radius: 2px;
+  @include desktop {
+    height: 6px;
+    width: 78px;
+    top: -24px;
+  }
+  top: -14px;
+  left: 0px;
+}
+
+.hero-text {
+  @include font(300, 11px, 1.55);
+  @include desktop {
+    font-size: 15px;
+    line-height: 1.47;
+    width: 363px;
+    margin-bottom: 24px;
+  }
+  color: var(--text-color);
+  position: relative;
+}
+
+.hero-btn {
+  @include mob {
+    display: none;
+  }
+  padding: 14px 77px;
+  background-color: transparent;
+  @include font(800, 13px, 1.15);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 100px;
+}
+
+.hero-cover-bottom {
+  position: relative;
+}
+
+.hero-img-fon {
+  width: 144px;
+  height: 144px;
+  background-color: var(--second-background-color);
+  @include desktop {
+    width: 486px;
+    height: 486px;
+  }
+}
+
+.hero-img {
+  position: absolute;
+  top: -27px;
+  left: -36px;
+  @include desktop {
+    top: -56px;
+    left: -110px;
+  }
+}

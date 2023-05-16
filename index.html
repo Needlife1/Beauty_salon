@@ -18,23 +18,174 @@
 <body>
 
     <head>
-        <div class="heder-mob container">
-            <button class="heder-mob-button" type="button">
+        <div class="header-mob container">
+            <button class="header-mob-button" type="button">
                 <svg width="30" height="20">
                     <use href="./img/symbol-defs.svg#icon-mob-menu"></use>
                 </svg>
             </button>
-            <div class="heder-mob-wrup">
-                <a class="link heder-mob-tel" href="tel:+38053650916">+3 805 365-09-16</a>
-                <a class="link heder-mob-link" href=" heder-mob-link">Написать нам</a>
+            <div class="header-mob-wrup">
+                <a class="link header-mob-tel" href="tel:+38053650916">+3 805 365-09-16</a>
+                <a class="link header-mob-link" href=" heder-mob-link">Написать нам</a>
             </div>
-            <a class="link heder-mob-logo" href="./index.html">
+            <a class="link header-mob-logo" href="./index.html">
                 <svg width="44" height="38">
                     <use href="./img/symbol-defs.svg#icon-logo"></use>
                 </svg>
             </a>
         </div>
+
+        <div class="header container">
+            <address class="header-address">
+                <p class="header-address-text">г. Харьков, ул. Пушкинская, 2</p>
+                <a class="header-address-link link" target="_blank" url="noreferrer noopener nofollow"
+                    href="https://goo.gl/maps/5Uo3Wa845KAhN3Co8?coh=178573&entry=tt">Посмотреть на карте</a>
+            </address>
+            <nav class="header-nav">
+                <ul class="header-nav-list list">
+                    <li class="header-nav-item"><a class="header-nav-link current link" href="">Главная</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link link" href="">О компании</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link link" href="">Услуги</a></li>
+                </ul>
+                <a class="link header-logo" href="./index.html">
+                    <svg width="66" height="61">
+                        <use href="./img/symbol-defs.svg#icon-logo"></use>
+                    </svg>
+                </a>
+                <ul class="header-nav-list list">
+                    <li class="header-nav-item"><a class="header-nav-link link" href="">Отзывы</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link link" href="">Обучение</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-tel-vrap">
+                <a class="header-tel link" href="tel:+38053650916">+3 805 365-09-16</a>
+                <button class="header-button">Написать нам</button>
+            </div>
+        </div>
     </head>
+    <main>
+        <div class="hero container">
+            <div class="hero-cover-top">
+                <h1 class="hero-titel">супер брови от мастеров <span lang="en" class="hero-titel-el">brow Expert</span>
+                </h1>
+                <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor</p>
+                <button class="hero-btn" type="button">Записаться</button>
+            </div>
+            <div class="hero-cover-bottom">
+                <div class="hero-img-fon">
+                    <picture>
+                        <source srcset="./img/hero-desk-1x-min.png 1x, ./img/hero-desk-2x-min.png 2x"
+                            media="(min-width: 768px)" width="540" height="540">
+                        <source srcset="./img/hero-mob-1x-min.png 1x, ./img/hero-mob-2x-min.png 2x"
+                            media="(max-width: 767.9px)" width="170" height="170">
+                        <img class="hero-img" src="./img/hero-mob-1x-min.png" alt="Лицо девушки">
+                    </picture>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="our-job container">
+            <h2 class="our-job-titel">это наша работа</h2>
+            <p class="our-job-top-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore</p>
+            <ul class="our-job-list list">
+                <li class="aur-job-item">
+                    <div class="aor-job-figures"><span class="aur-job-number">5</span>
+                        <p class="aur-job-text">выдающихся
+                            мастеров</p>
+                    </div>
+                </li>
+                <li class="aur-job-item">
+                    <div class="aor-job-figures"><span class="aur-job-number">1062</span>
+                        <p class="aur-job-text">выдающихся
+                            мастеров</p>
+                    </div>
+                </li>
+                <li class="aur-job-item">
+                    <div class="aor-job-figures"><span class="aur-job-number">35</span>
+                        <p class="aur-job-text">минут
+                            до результата</p>
+                    </div>
+                </li>
+                <li class="aur-job-item">
+                    <div class="aor-job-figures"><span class="aur-job-number">10</span>
+                        <p class="aur-job-text">основных
+                            услуг</p>
+                    </div>
+                </li>
+            </ul>
+            <picture>
+                <source srcset="./img/aur-job-desk-1x.png 1x, ./img/aur-job-desk-2x.png 2x" media="(min-width: 768px)">
+                <source srcset="./img/aur-job-mob-1x .png 1x, ./img/aur-job-mob-2x.png 2x" media="(max-width: 767.9px)">
+                <img class="aur-job-img" src="./img/aur-job-desk-1x.png" alt="Пинцет">
+            </picture>
+
+        </div>
+
+        <div class="services ">
+            <h2 class="services-title">что мы делаем</h2>
+
+            <ul class="services-list list">
+                <li data-open>
+                    <p class="services-nav">Услуги</p>
+                    <svg width="12" height="6">
+                        <use href="./img/symbol-defs.svg#icon-services-mob"></use>
+                    </svg>
+                    <ul class="services-sub-list list  visually-hidden">
+                        <li><a class="services-sub-link link" href="">Дизайн бровей</a></li>
+                        <li><a class="services-sub-link link" href="">Окрашивание бровей</a></li>
+                        <li><a class="services-sub-link link" href="">Окрашивание ресниц</a></li>
+                        <li><a class="services-sub-link link" href="">SPA-окрашивание ресниц хной</a></li>
+                        <li><a class="services-sub-link link" href="">Тридинг лицевых зон</a></li>
+                        <li><a class="services-sub-link link" href="">Восковая эпиляция лица</a></li>
+                        <li><a class="services-lust-link link" href="">Посмотреть все услуги &#10230;</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <div class="services-cover">
+                <div class="services-cover-text">
+                    <h3 class="services-second-title">дизайн бровей</h3>
+                    <p class="services-text">Sed ut perspiciatis unde
+                        omnis iste natus error sit
+                        voluptatem accusantium
+                        doloremque laudantium,
+                        totam rem aperiam, eaque
+                        ipsa quae ab illo inventore
+                        veritatis et quasi architecto.
+                    </p>
+                </div>
+
+                <div class="services-fon">
+                    <picture>
+                        <source srcset="./img/services-top-desk-1x.png 1x, ./img/services-top-desk-2x.png 2x"
+                            media="(min-width: 768px)" width="540" height="540">
+                        <source srcset="./img/services-top-mob-1x.png 1x, ./img/services-top-mob-2x.png 2x"
+                            media="(max-width: 767.9px)" width="170" height="170">
+                        <img class="services-top-img" src="./img/services-top-desk-1x.png" alt="Лицо девушки">
+                    </picture>
+
+                </div>
+            </div>
+
+            <div class="services-cover-bottom">
+                <div class="services-cover-prise">
+                    <span class="services-prise">300 грн</span>
+                    <p class="services-bottom-text">за сеанс</p>
+                </div>
+                <button class="services-button" type="button">Записаться</button>
+            </div>
+            <img class="services-bottom-img" src="./img/services-bottom-mob-1x.png" alt="Тюбик">
+
+        </div>
+    </main>
+    <script type="module" src="./js/drop-down-menu.js"></script>
 </body>
 
 </html>

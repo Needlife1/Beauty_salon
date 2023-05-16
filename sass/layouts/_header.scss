@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @include mob {
+    display: none;
+  }
+}
+
+.header-address {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.header-address-text {
+  font-style: normal;
+  @include font(800, 17px, 1.17);
+  color: var(--text-color);
+}
+
+.header-address-link {
+  font-style: normal;
+  @include font(300, 13px, 1.15);
+  color: var(--text-color);
+}
+
+.header-nav {
+  display: flex;
+  gap: 31px;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 31px;
+}
+
+.header-nav-link {
+  font-family: "Roboto";
+  font-style: normal;
+  @include font(300, 17px, 1.17);
+  color: var(--text-color);
+  position: relative;
+  padding: 6px;
+  :before {
+    content: "";
+    width: 65px;
+    height: 1px;
+    display: block;
+    background-color: black;
+  }
+}
+
+.header-tel-vrap {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.header-tel {
+  font-family: "Roboto";
+  font-style: normal;
+  @include font(300, 17px, 1.17);
+  color: var(--text-color);
+}
+
+.header-button {
+  font-family: "Roboto";
+  font-style: normal;
+  @include font(300, 13px, 1.15);
+  color: var(--text-color);
+  border: none;
+  background-color: transparent;
+}

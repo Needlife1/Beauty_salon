@@ -1,0 +1,108 @@
+.our-job {
+  background-color: var(--second-background-color);
+  padding-top: 49px;
+  padding-bottom: 69px;
+  position: relative;
+  @include desktop {
+    padding-top: 128px;
+    padding-bottom: 143px;
+  }
+}
+.our-job-titel {
+  @include font(800, 28px, 1.17);
+  text-transform: uppercase;
+  color: var(--second-text-color);
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  @include desktop {
+    @include font(800, 60px, 1.16);
+  }
+  top: 18px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 40px;
+    background-color: #ff312e;
+    border-radius: 2px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    top: 42px;
+    @include desktop {
+      height: 6px;
+      width: 78px;
+      top: 90px;
+    }
+  }
+}
+
+.our-job-top-text {
+  @include font(300, 11px, 1.54);
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 36px;
+  max-width: 363px;
+  margin-left: auto;
+  margin-right: auto;
+  @include desktop {
+    @include font(300, 15px, 1.47);
+    margin-bottom: 85px;
+  }
+}
+
+.our-job-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-evenly;
+}
+
+.aor-job-figures {
+  width: 134px;
+  height: 134px;
+  @media screen and (min-width: 331px) {
+    width: 144px;
+    height: 144px;
+  }
+  @include desktop {
+    width: 282px;
+    height: 282px;
+  }
+  padding: 30px 25px;
+  border: 4px solid var(--second-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aur-job-number {
+  @include font(800, 40px, 1.17);
+  text-transform: uppercase;
+  color: var(--accent-color);
+  @include desktop {
+    @include font(800, 66px, 1.16);
+  }
+}
+.aur-job-text {
+  @include font(300, 13px, 1.38);
+  text-transform: uppercase;
+  color: var(--text-color);
+  text-align: center;
+  @include desktop {
+    @include font(300, 17px, 1.53);
+  }
+}
+.aur-job-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-right: 50px;
+  transform: translate(-50%, 50%);
+}

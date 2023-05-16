@@ -6,5 +6,8 @@
 <symbol id="icon-mob-menu" viewBox="0 0 48 32">
 <path d="M0 0h48v6.4h-48zM0 12.8h48v6.4h-48zM0 25.6h48v6.4h-48z"></path>
 </symbol>
+<symbol id="icon-services-mob" viewBox="0 0 77 32">
+<path d="M38.4 32l-33.254-28.8h66.509l-33.254 28.8z"></path>
+</symbol>
 </defs>
 </svg>

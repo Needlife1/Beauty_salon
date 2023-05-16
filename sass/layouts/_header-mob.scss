@@ -1,37 +1,38 @@
-.heder-mob {
+.header-mob {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: transparent;
+  @include desktop {
+    display: none;
+  }
 }
 
-.heder-mob-button {
+.header-mob-button {
   background-color: transparent;
   border: 0;
 }
 
-.heder-mob-wrup {
+.header-mob-wrup {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 2px;
 }
 
-.heder-mob-tel {
+.header-mob-tel {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 800;
-  font-size: 13px;
-  line-height: 1.15;
-  text-align: right;
+  @include font(800, 13px, 1.15);
   color: var(--text-color);
 }
 
-.heder-mob-link {
+.header-mob-link {
   font-family: "Roboto";
   font-style: normal;
+  @include font(300, 11px, 1.18);
   font-weight: 300;
   font-size: 11px;
   line-height: 1.18;
-  text-align: right;
   color: var(--text-color);
-}/*# sourceMappingURL=header-mob.css.map */
+}

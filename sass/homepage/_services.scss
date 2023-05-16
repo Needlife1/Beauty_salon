@@ -1,0 +1,148 @@
+.services {
+  position: relative;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.services-title {
+  @include font(800, 24px, 1.16);
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-bottom: 47px;
+  padding: 0 15px 0 15px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 40px;
+    background-color: #ff312e;
+    border-radius: 2px;
+    left: 35px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    top: 70px;
+    @include desktop {
+      height: 6px;
+      width: 78px;
+      top: 90px;
+    }
+  }
+}
+
+.services-list {
+  margin-bottom: 36px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 11px;
+  border-right: none;
+  border-left: none;
+}
+
+.services-list li {
+  position: relative;
+}
+
+.services-nav {
+  color: var(--text-color);
+}
+
+.services-list svg {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  transition: transform 300ms linear;
+}
+
+.services-list:hover svg {
+  transform: rotate(180deg);
+}
+
+.services-sub-list {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding-top: 20px;
+  width: 100%;
+  z-index: 2;
+}
+
+.services-sub-list > li {
+  background-color: var(--second-text-color);
+  padding: 11px 0px;
+}
+
+.services-sub-link {
+  color: var(--text-color);
+  @include font(300, 13px, 1.15);
+}
+
+.services-lust-link {
+  color: var(--text-color);
+  @include font(300, 13px, 1.15);
+  opacity: 0.4;
+}
+
+.services-cover {
+  display: flex;
+  margin-bottom: 22px;
+  gap: 12px;
+  padding: 0 15px 0 15px;
+}
+
+.services-second-title {
+  @include font(800, 15px, 1.2);
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-bottom: 11px;
+}
+
+.services-text {
+  @include font(300, 11px, 1.55);
+  color: var(--text-color);
+}
+
+.services-fon {
+  min-width: 144px;
+  height: 144px;
+  background-color: var(--second-background-color);
+  position: relative;
+}
+
+.services-top-img {
+  position: absolute;
+  top: -27px;
+  right: 7px;
+  z-index: 1;
+}
+
+.services-cover-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.services-prise {
+  @include font(800, 20px, 1.15);
+}
+
+.services-bottom-text {
+  @include font(300, 11px, 1.55);
+  color: var(--text-color);
+}
+
+.services-button {
+  @include font(800, 11px, 1.18);
+  text-transform: uppercase;
+  padding: 12.5px 62px;
+  background: transparent;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 100px;
+}
+
+.services-bottom-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, 60%);
+}

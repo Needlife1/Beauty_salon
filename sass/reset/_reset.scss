@@ -14,11 +14,11 @@ ol {
   padding-left: 0;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+// img {
+//   display: block;
+//   max-width: 100%;
+//   height: auto;
+// }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -30,4 +30,8 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }

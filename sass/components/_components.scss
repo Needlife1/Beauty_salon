@@ -21,7 +21,7 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  width: 320px;
+  min-width: 320px;
   @include desktop {
     width: 1200px;
   }

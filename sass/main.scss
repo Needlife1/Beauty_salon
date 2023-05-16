@@ -1,6 +1,11 @@
+@import "./components/root";
 @import "./reset/reset.scss";
 @import "./mixin_plaisholder/mixin";
 @import "./mixin_plaisholder/plaisholder";
 @import "./components/components";
 
 @import "./layouts/header-mob.scss";
+@import "./layouts/header";
+@import "./homepage/hero";
+@import "./homepage/our-job";
+@import "./homepage/services";
